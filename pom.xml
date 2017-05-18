@@ -2,19 +2,18 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+	<groupId>com.adanac.framework.archetypes</groupId>
+	<artifactId>adanac-pom</artifactId>
+	<version>1.0.0</version>	
+  </parent>
   <groupId>com.adanac.tool</groupId>
   <artifactId>adanac-tool</artifactId>
-  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>adanac-tool</name>
   <url>http://maven.apache.org</url>
   
-  <parent>
-	<groupId>com.adanac.framework.archetypes</groupId>
-	<artifactId>adanac-parent</artifactId>
-	<version>1.0.0</version>	
-  </parent>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +23,6 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
   
@@ -32,6 +30,7 @@
 		<dependency>
 		  <groupId>com.adanac.framework</groupId>
 		  <artifactId>adanac-log</artifactId>
+		  <version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.adanac.framework</groupId>

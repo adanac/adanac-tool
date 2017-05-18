@@ -63,7 +63,7 @@ public class OperDB_Mysql {
 	public static void main(String[] args) throws SQLException {
 		try {
 			OperDB_Mysql db = new OperDB_Mysql(
-					"jdbc:mysql://192.168.2.144:3306/demo?useUnicode=true&characterEncoding=utf8", "root", "");
+					"jdbc:mysql://192.168.24.87:3306/demo?useUnicode=true&characterEncoding=utf8", "root", "root");
 			// db.executeStatement("aaa", "bbb");
 			// db.executeStatement("aaa", "' or '2'='2");
 			//
